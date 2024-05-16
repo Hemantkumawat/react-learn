@@ -7,11 +7,23 @@ export const TodoContext = createContext({
     ],
     addTodo: (todo) => {
         console.log('Add Todo Function')
-    },
-    toggleTodo: (id) => {
 
     },
-    deleteTodo: (id) => { },
+    toggleTodo: (id) => {
+        const updatedTodos = todos.map(todo => {
+            if (todo.id === id) {
+                return {
+                    ...todo,
+                    completed: !todo.completed
+                };
+            }
+            return todo;
+        });
+        setTodos(updatedTodos);
+    },
+    deleteTodo: (id) => {
+
+    },
     editTodo: (id, todo) => { },
 });
 
