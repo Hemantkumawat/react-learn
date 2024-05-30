@@ -26,13 +26,16 @@ export const TodoProvider = ({ children }) => {
     };
 
     const deleteTodo = (id) => {
+        console.log('id', id);
         setTodos(prevTodos => prevTodos.filter(todo => todo.id !== id));
     };
 
     const editTodo = (id, updatedTodo) => {
         setTodos(prevTodos =>
+
             prevTodos.map(todo =>
                 todo.id === id ? { ...todo, ...updatedTodo } : todo
+
             )
         );
     };
