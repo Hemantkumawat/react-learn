@@ -7,11 +7,11 @@ import Todos from './components/Todos'
 
 function App() {
   return (
-    <>
+    <div>
       <h1>Learn About Redux Toolkit</h1>
       <AddTodo />
       <Todos />
-    </>
+    </div>
   )
 }
 
