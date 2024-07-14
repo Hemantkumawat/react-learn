@@ -3,8 +3,7 @@ import { useDispatch } from 'react-redux'
 // import './App.css'
 import authService from './appWrite/auth';
 import { login, logout } from './store/authSlice';
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
+import { Footer, Header, Container } from './components';
 
 function App() {
 
@@ -28,8 +27,9 @@ function App() {
     <>
       <Header />
       <main>
-        <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>A Blog with Appwrite</div>
-
+        <Container>
+          <div className='min-h-screen flex flex-wrap content-between bg-gray-400'>A Blog with Appwrite</div>
+        </Container>
       </main>
       <Footer />
     </>
