@@ -47,7 +47,7 @@ const Header = () => {
                     <ul className="flex space-x-4">
                         {navItems.forEach((item) =>
                         (item.active ?
-                            (<li key={item.name}>
+                            (<li key={item.name} className="px-2 border-2 border-l-gray-500">
                                 <button href="/"
                                     onClick={() => navigate(item.slug)}
                                     className="text-white hover:text-gray-300">
