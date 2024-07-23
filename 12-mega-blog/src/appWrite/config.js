@@ -109,7 +109,7 @@ export class Service {
                 config.appWrite.bucketId, id
             )
         } catch (error) {
-            console.log('Error:::', error);
+            console.log('Error::: wihile delete file', error);
             return false;
         }
     }
