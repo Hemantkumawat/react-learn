@@ -113,9 +113,6 @@ export class Service {
             return false;
         }
     }
-
-
-
 }
 
 const service = new Service();

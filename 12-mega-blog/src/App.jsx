@@ -24,7 +24,7 @@ function App() {
     }).finally(() => setLoading(false));
   }, []);
   return (
-    <>
+    <div>
       <Header />
       <main>
         <Container>
@@ -32,7 +32,7 @@ function App() {
         </Container>
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
 
